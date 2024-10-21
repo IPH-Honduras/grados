@@ -42,7 +42,7 @@ header {
 
 /* Estilo del primer H1 */
 .main-title {
-    color: #e74c3c; /* Cambiado a rojo para resaltar */
+    color: white; /* Cambiado a blanco */
 }
 
 /* Estilo del segundo H1 debajo del texto principal */
@@ -187,3 +187,4 @@ footer {
     padding: 10px 0;
     margin-top: 40px;
 }
+
