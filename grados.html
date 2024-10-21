@@ -7,58 +7,53 @@
     <title>INSTITUTO POLIVALENTE HONDURAS</title>
     <style>
         :root {
-            --primary-color: #6a0dad;
-            --bg-color: #87CEEB; /* Azul celeste */
-            --table-header-bg: #8a2be2;
-            --table-border-color: #006400;
-            --button-bg: #ffcc00;
-            --button-hover-bg: #ffdb4d;
-            --highlight-color: #e67e22; /* Color para resaltar texto */
+            --bg-color: #ffeb3b; /* Color de fondo */
+            --primary-color: #6a0dad; /* Color principal */
+            --table-header-bg: #8a2be2; /* Fondo cabecera tabla */
+            --table-border-color: #006400; /* Color borde tabla */
         }
-
+        
         body {
             background-color: var(--bg-color);
             color: black;
-            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif; 
             margin: 0;
-            padding: 10px;
+            padding: 10px; 
         }
 
         h1, h2 {
             color: var(--primary-color);
-            text-align: center;
         }
 
         a {
             color: var(--primary-color);
-            text-decoration: none;
+            text-decoration: none; 
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline; 
         }
 
         .header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100px;
-            background-color: #f0f0f0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100px; 
+            background-color: #f0f0f0; 
         }
 
         img {
-            max-width: 5%;
-            height: auto;
+            max-width: 50px; 
+            height: auto; 
+            margin-right: 10px; 
         }
 
         .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1000px; 
+            margin: auto; 
+            padding: 20px; 
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px; 
         }
 
         .navbar {
@@ -66,8 +61,8 @@
         }
 
         .nav-buttons {
-            display: flex;
-            justify-content: center;
+            display: flex; 
+            justify-content: center; 
             gap: 10px; 
             margin-top: 20px; 
         }
@@ -80,7 +75,6 @@
             padding: 10px 15px; 
             cursor: pointer; 
             transition: background-color 0.3s; 
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         button:hover {
@@ -88,15 +82,15 @@
         }
 
         table {
-            border-collapse: collapse;
-            width: 100%;
-            margin-top: 20px;
+            border-collapse: collapse; 
+            width: 100%; 
+            margin-top: 20px; 
         }
 
         th, td {
-            padding: 8px;
-            text-align: left;
-            color: black;
+            padding: 8px; 
+            text-align: left; 
+            color: black; 
             border: 2px solid var(--table-border-color);
         }
 
@@ -105,22 +99,21 @@
         }
 
         .image-container {
-            text-align: center;
-            margin: 20px 0;
+            text-align: center; 
+            margin: 20px 0; 
             border: 1px solid var(--table-border-color);
-            border-radius: 5px;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px; 
+            padding: 10px; 
+            background-color: rgba(255, 255, 255, 0.8); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
             transition: transform 0.3s; 
         }
 
         .image-container img {
-            width: 100%;
-            height: auto;
-            max-width: 300px;
-            border-radius: 5px;
-            object-fit: cover;
+            width: 100%; 
+            max-width: 300px; 
+            border-radius: 5px; 
+            object-fit: cover; 
             transition: transform 0.3s; 
         }
 
@@ -129,52 +122,19 @@
         }
 
         .image-title {
-            font-weight: bold;
-            margin-top: 10px;
-            color: var(--primary-color);
+            font-weight: bold; 
+            margin-top: 10px; 
+            color: var(--primary-color); 
         }
 
         @media (max-width: 600px) {
             .navbar {
-                flex-direction: column;
-                align-items: flex-start;
+                flex-direction: column; 
+                align-items: flex-start; 
             }
-
             button {
-                width: 100%;
+                width: 100%; 
             }
-        }
-
-        /* Nuevos estilos para los grados */
-        #tercerCiclo ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        #tercerCiclo li {
-            background-color: rgba(255, 255, 255, 0.8);
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s, transform 0.3s;
-            font-size: 1.2em;
-            color: var(--highlight-color); /* Color resaltante */
-        }
-
-        #tercerCiclo li:hover {
-            background-color: var(--highlight-color); /* Resaltado al pasar el mouse */
-            color: white; /* Cambia el color del texto */
-            transform: translateY(-3px); /* Efecto de levantamiento */
-        }
-
-        /* Estilos para el pie de página */
-        footer {
-            background-color: #34495e;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 40px;
         }
     </style>
     <script>
@@ -198,7 +158,7 @@
 <body>
     <header class="header">
         <h1 style="display: flex; align-items: center;">
-            <img src="Imagenes/IPH.png" alt="Logo IPH" style="max-width: 50px; margin-right: 10px;">
+            <img src="Imagenes/IPH.png" alt="Logo IPH">
             <a href="index.html">INSTITUTO POLIVALENTE HONDURAS</a>
         </h1>
     </header>
@@ -214,7 +174,7 @@
     <main class="container">
         <section id="introduccion">
             <h2>Introducción</h2>
-            <p align="justify">Instituto Polivalente Honduras ofrece un ciclo educativo desde séptimo a noveno grado, brindando a los padres la oportunidad de matricular a sus hijos para recibir una formación de calidad. El tercer ciclo incluye diversas áreas de talleres donde los estudiantes pueden aprender y experimentar. A continuación, aquí en esta página web les brindamos información sobre los grados y sus talleres.</p>
+            <p align="justify">Instituto Polivalente Honduras ofrece un ciclo educativo desde séptimo a noveno grado, brindando a los padres la oportunidad de matricular a sus hijos para recibir una formación de calidad. A continuación, en esta página web les brindamos información sobre los grados y sus talleres.</p>
         </section>
         <hr>
 
@@ -230,34 +190,34 @@
 
         <section id="talleres">
             <h1>Talleres Disponibles</h1>
-            <p align="justify"><em>La educación básica es el pilar fundamental sobre el cual se construye el desarrollo personal y profesional de los individuos. Los talleres de educación básica tienen como objetivo reforzar y complementar los conocimientos adquiridos en las etapas formativas iniciales, promoviendo el aprendizaje activo y la participación.</em></p>
+            <p align="justify"><em>La educación básica es el pilar fundamental sobre el cual se construye el desarrollo personal y profesional de los individuos.</em></p>
             <ul>
                 <li>
                     <div class="image-container">
                         <h3 class="image-title">Taller de Hogar</h3>
                         <img src="Imagenes/imagen 4.jfif" alt="Taller de Hogar: cocina">
-                        <p align="justify">Este taller ofrece a los estudiantes la oportunidad de aprender técnicas culinarias y habilidades de gestión del hogar, promoviendo la autonomía y la creatividad en la cocina. Este conocimiento es valioso a futuro para los estudiantes ya que promueve una alimentación saludable, el ahorro de comida y la independencia en su vida diaria.</p>
+                        <p align="justify">Este taller ofrece a los estudiantes la oportunidad de aprender técnicas culinarias y habilidades de gestión del hogar, promoviendo la autonomía y la creatividad en la cocina.</p>
                     </div>
                 </li>
                 <li>
                     <div class="image-container">
                         <h3 class="image-title">Taller de Agropecuaria</h3>
                         <img src="Imagenes/Imagen 1.jfif" alt="Taller de Agropecuaria">
-                        <p align="justify">En este taller, los estudiantes aprenden sobre el cultivo de plantas y la preparación de tierras, el uso sostenible de recursos naturales y la gestión de huertos. Este taller es útil para comprender cómo producir alimentos de manera eficiente.</p>
+                        <p align="justify">En este taller, los estudiantes aprenden sobre el cultivo de plantas y la preparación de tierras.</p>
                     </div>
                 </li>
                 <li>
                     <div class="image-container">
                         <h3 class="image-title">Taller de Metálica</h3>
                         <img src="Imagenes/imagen 3.jfif" alt="Taller de Metálica">
-                        <p align="justify">Los alumnos desarrollan habilidades en el trabajo con metal, aprendiendo a fabricar y reparar diversos objetos y herramientas mediante técnicas de soldadura y modelado. Los estudiantes aprenden a manipular herramientas y máquinas especializadas para crear o reparar objetos de metal.</p>
+                        <p align="justify">Los alumnos desarrollan habilidades en el trabajo con metal, aprendiendo a fabricar y reparar diversos objetos.</p>
                     </div>
                 </li>
                 <li>
                     <div class="image-container">
                         <h3 class="image-title">Taller de Madera</h3>
                         <img src="Imagenes/imagen 2.jfif" alt="Taller de Madera">
-                        <p align="justify">Este taller permite a los estudiantes explorar el trabajo con madera, aprendiendo técnicas de carpintería y diseño de muebles, lo que fomenta la creatividad y el trabajo manual. Este taller es útil en áreas como carpintería, diseño de interiores y la construcción, abriendo nuevas oportunidades en el ámbito profesional.</p>
+                        <p align="justify">Este taller permite a los estudiantes explorar el trabajo con madera.</p>
                     </div>
                 </li>
             </ul>
@@ -282,54 +242,43 @@
                     <td>Inglés</td>
                 </tr>
                 <tr>
-                    <td>Educación Artística</td>
-                    <td>Educación Artística</td>
-                    <td>Educación Artística</td>
+                    <td>Matemáticas</td>
+                    <td>Matemáticas</td>
+                    <td>Matemáticas</td>
                 </tr>
                 <tr>
                     <td>Ciencias Naturales</td>
                     <td>Ciencias Naturales</td>
-                    <td>Ciencias Naturales</td>
+                    <td>Ciencias Sociales</td>
                 </tr>
                 <tr>
-                    <td>Estudios Sociales</td>
-                    <td>Estudios Sociales</td>
-                    <td>Estudios Sociales</td>
+                    <td>Ciencias Sociales</td>
+                    <td>Ciencias Sociales</td>
+                    <td>Educación Cívica</td>
                 </tr>
                 <tr>
                     <td>Educación Cívica</td>
                     <td>Educación Cívica</td>
-                    <td>Educación Cívica</td>
+                    <td>Biología</td>
                 </tr>
                 <tr>
-                    <td>Educación Física y Deportes</td>
-                    <td>Educación Física y Deportes</td>
-                    <td>Educación Física y Deportes</td>
+                    <td>Educación Artística</td>
+                    <td>Educación Artística</td>
+                    <td>Química</td>
                 </tr>
                 <tr>
-                    <td>Tecnología</td>
-                    <td>Tecnología</td>
-                    <td>Tecnología</td>
-                </tr>
-                <tr>
-                    <td>Dibujo Técnico</td>
-                    <td>Dibujo Técnico</td>
-                    <td>Dibujo Técnico</td>
+                    <td>Educación Física</td>
+                    <td>Educación Física</td>
+                    <td>Física</td>
                 </tr>
             </table>
-
-            <div class="nav-buttons">
-                <button class="btn" onClick="alert('DIRECTORA: Iris Marlen Espinal    tel: (+504 3242-7125)')">¡Contáctanos!</button>
-                <a href="index.html">
-                    <button class="btn">Regresar a la página principal</button>
-                </a>
-            </div>
         </section>
-         
-     </main>
-     
-    <footer>
-        <p style="text-align:center; margin-top:20px;">&copy; 2024 Instituto Polivalente Honduras. Todos los derechos reservados.</p>
+    </main>
+    <footer style="text-align:center; margin-top: 30px;">
+        <p>&copy; 2024 Instituto Polivalente Honduras. Todos los derechos reservados.</p>
+        <nav class="navbar">
+            <button onClick="location.href='index.html'">Regresar a la página principal</button>
+        </nav>
     </footer>
 </body>
 </html>
