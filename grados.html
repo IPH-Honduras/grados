@@ -8,11 +8,12 @@
     <style>
         :root {
             --primary-color: #6a0dad;
-            --bg-color: #ffeb3b;
+            --bg-color: #87CEEB; /* Azul celeste */
             --table-header-bg: #8a2be2;
             --table-border-color: #006400;
             --button-bg: #ffcc00;
             --button-hover-bg: #ffdb4d;
+            --highlight-color: #e67e22; /* Color para resaltar texto */
         }
 
         body {
@@ -25,6 +26,7 @@
 
         h1, h2 {
             color: var(--primary-color);
+            text-align: center;
         }
 
         a {
@@ -42,6 +44,7 @@
             align-items: center;
             height: 100px;
             background-color: #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         img {
@@ -55,6 +58,7 @@
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .navbar {
@@ -76,6 +80,7 @@
             padding: 10px 15px; 
             cursor: pointer; 
             transition: background-color 0.3s; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         button:hover {
@@ -139,12 +144,38 @@
                 width: 100%;
             }
         }
-       
-       {
-           .li Séptimo {
-           background-color: rgba(255, 255, 255, 0.8);
-               
-        
+
+        /* Nuevos estilos para los grados */
+        #tercerCiclo ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        #tercerCiclo li {
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 1.2em;
+            color: var(--highlight-color); /* Color resaltante */
+        }
+
+        #tercerCiclo li:hover {
+            background-color: var(--highlight-color); /* Resaltado al pasar el mouse */
+            color: white; /* Cambia el color del texto */
+            transform: translateY(-3px); /* Efecto de levantamiento */
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
     </style>
     <script>
         window.onload = function() {
@@ -183,14 +214,14 @@
     <main class="container">
         <section id="introduccion">
             <h2>Introducción</h2>
-            <p align="justify">Instituto Polivalente Honduras ofrece un ciclo educativo desde séptimo a noveno grado, brindando a los padres la oportunidad de matricular a sus hijos para recibir una formación de calidad. El tercer ciclo incluye diversas áreas de talleres donde los estudiantes pueden aprender y experimentar. A continuación, aqui en esta página web les brindamos información sobre  los grados y sus talleres.</p>
+            <p align="justify">Instituto Polivalente Honduras ofrece un ciclo educativo desde séptimo a noveno grado, brindando a los padres la oportunidad de matricular a sus hijos para recibir una formación de calidad. El tercer ciclo incluye diversas áreas de talleres donde los estudiantes pueden aprender y experimentar. A continuación, aquí en esta página web les brindamos información sobre los grados y sus talleres.</p>
         </section>
         <hr>
 
         <section id="tercerCiclo">
             <h1>Tercer Ciclo</h1>
             <ul>
-                <li >Séptimo</li>
+                <li>Séptimo</li>
                 <li>Octavo</li>
                 <li>Noveno</li>
             </ul>
@@ -205,28 +236,28 @@
                     <div class="image-container">
                         <h3 class="image-title">Taller de Hogar</h3>
                         <img src="Imagenes/imagen 4.jfif" alt="Taller de Hogar: cocina">
-                        <p align="justify">Este taller ofrece a los estudiantes la oportunidad de aprender técnicas culinarias y habilidades de gestión del hogar, promoviendo la autonomía y la creatividad en la cocina, este conocimiento es valioso a futuro para los estudiantes ya que promueve una alimentacion saludable,el ahorro de comida y la independiencia en su vida diaria.</p>
+                        <p align="justify">Este taller ofrece a los estudiantes la oportunidad de aprender técnicas culinarias y habilidades de gestión del hogar, promoviendo la autonomía y la creatividad en la cocina. Este conocimiento es valioso a futuro para los estudiantes ya que promueve una alimentación saludable, el ahorro de comida y la independencia en su vida diaria.</p>
                     </div>
                 </li>
                 <li>
                     <div class="image-container">
                         <h3 class="image-title">Taller de Agropecuaria</h3>
                         <img src="Imagenes/Imagen 1.jfif" alt="Taller de Agropecuaria">
-                        <p align="justify">En este taller, los estudiantes aprenden sobre el cultivo de plantas y la preparacion de tierras, el uso sostenible de recursos naturales y la gestion de huertos, este taller es util, para comprender, como producir alimentos de manera eficiente.</p>
+                        <p align="justify">En este taller, los estudiantes aprenden sobre el cultivo de plantas y la preparación de tierras, el uso sostenible de recursos naturales y la gestión de huertos. Este taller es útil para comprender cómo producir alimentos de manera eficiente.</p>
                     </div>
                 </li>
                 <li>
                     <div class="image-container">
                         <h3 class="image-title">Taller de Metálica</h3>
                         <img src="Imagenes/imagen 3.jfif" alt="Taller de Metálica">
-                        <p align="justify">Los alumnos desarrollan habilidades en el trabajo con metal, aprendiendo a fabricar y reparar diversos objetos y herramientas mediante técnicas de soldadura y modelado, los estudiantes aprende a manipular herramientas y maquinas, especializadas, para crear o reparar objetos de metal.</p>
+                        <p align="justify">Los alumnos desarrollan habilidades en el trabajo con metal, aprendiendo a fabricar y reparar diversos objetos y herramientas mediante técnicas de soldadura y modelado. Los estudiantes aprenden a manipular herramientas y máquinas especializadas para crear o reparar objetos de metal.</p>
                     </div>
                 </li>
                 <li>
                     <div class="image-container">
                         <h3 class="image-title">Taller de Madera</h3>
                         <img src="Imagenes/imagen 2.jfif" alt="Taller de Madera">
-                        <p align="justify">Este taller permite a los estudiantes explorar el trabajo con madera, aprendiendo técnicas de carpintería y diseño de muebles, lo que fomenta la creatividad y el trabajo manual, este taller es util en area como, carpinteria, diseño de interiores y la construccion, abriendo nuevas oportunidades, en el ambito profesional.</p>
+                        <p align="justify">Este taller permite a los estudiantes explorar el trabajo con madera, aprendiendo técnicas de carpintería y diseño de muebles, lo que fomenta la creatividad y el trabajo manual. Este taller es útil en áreas como carpintería, diseño de interiores y la construcción, abriendo nuevas oportunidades en el ámbito profesional.</p>
                     </div>
                 </li>
             </ul>
@@ -287,8 +318,13 @@
                 </tr>
             </table>
 
-            <button class="btn" onClick="alert('DIRECTORA: Iris Marlen Espinal    tel: (+504 3242-7125)')">¡Contáctanos!</button>
-         </section>
+            <div class="nav-buttons">
+                <button class="btn" onClick="alert('DIRECTORA: Iris Marlen Espinal    tel: (+504 3242-7125)')">¡Contáctanos!</button>
+                <a href="index.html">
+                    <button class="btn">Regresar a la página principal</button>
+                </a>
+            </div>
+        </section>
          
      </main>
      
@@ -297,4 +333,3 @@
     </footer>
 </body>
 </html>
-
