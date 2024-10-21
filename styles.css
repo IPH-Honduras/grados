@@ -4,21 +4,29 @@
 
 
 
+/* styles.css */
+
+/* Estilos generales */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #e9ecef; /* Fondo gris claro */
+    background-color: #f5f5f5; /* Fondo gris claro */
     color: #333; /* Color del texto */
 }
 
 /* Encabezado */
- header {
+header {
     background: #007BFF; /* Fondo azul */
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Barra de navegación */
@@ -80,6 +88,14 @@ th, td {
 th {
     background-color: #007BFF; /* Fondo azul */
     color: white;
+}
+
+/* Contenido adicional */
+.additional-content {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
 /* Misión y Visión */
