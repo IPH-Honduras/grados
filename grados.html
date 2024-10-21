@@ -83,18 +83,20 @@
         }
 
         .grade-button {
-            background-color: #6a0dad; 
-            color: white; 
-            padding: 10px 20px; 
+            background-color: white; /* Color por defecto */
+            color: black; 
+            padding: 15px; /* Aumentar el padding para mayor área clicable */
+            border: 2px solid var(--primary-color); 
             border-radius: 5px; 
-            border: none; 
+            width: 100%; /* Ancho completo */
             transition: transform 0.3s, background-color 0.3s; 
             cursor: pointer; 
+            margin-bottom: 10px; /* Espacio entre botones */
         }
 
         .grade-button:hover {
-            background-color: #8a2be2; 
-            transform: scale(1.1); /* Zoom al pasar el mouse */
+            background-color: yellow; /* Color al pasar el mouse */
+            transform: scale(1.05); /* Zoom al pasar el mouse */
         }
 
         table {
