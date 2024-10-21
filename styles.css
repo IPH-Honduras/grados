@@ -1,163 +1,167 @@
-/* Estilo general */
+
+ /* styles.css */
+
+/* Estilos globales */
 body {
-    background-color: #007BFF; /* Fondo azul */
-    color: #333333; /* Color de texto */
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center; /* Centra todo el contenido */
-}
-
-header {
-    padding: 20px;
-    background-color: #0056b3;
-    color: white;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 h1, h2, h3 {
-    color: #000000; /* Títulos en negro */
+    color: #2c3e50;
+    text-align: center;
 }
 
-/* Imagen centrada y con efecto */
-img {
-    display: block;
-    margin: 20px auto;
-    width: 150px; /* Ajusta el tamaño según sea necesario */
-    transition: transform 0.3s ease-in-out;
+p {
+    line-height: 1.6;
+    margin: 20px;
 }
 
-img:hover {
-    transform: scale(1.1); /* Efecto de agrandamiento al pasar el ratón */
+/* Estilos para el encabezado */
+header {
+    background-color: #2980b9;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
 /* Barra de navegación */
 nav {
-    background-color: #0056b3;
+    background-color: #34495e;
     padding: 10px;
     text-align: center;
 }
 
 nav a {
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
-    display: inline-block;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    background-color: #004080; /* Efecto hover en los enlaces */
+    color: #f39c12;
 }
 
-/* Estilo del contenido */
+/* Estilos para el contenido principal */
 .content {
-    padding: 20px;
+    padding: 40px 20px;
     max-width: 1200px;
     margin: auto;
 }
 
-/* Texto más grande, blanco y en cursiva */
-p {
-    font-size: 1.2em;
-}
-
-p.ofrecemos {
-    font-size: 1.5em; /* Tamaño más grande */
-    color: white;     /* Color blanco */
-    font-style: italic; /* Texto en cursiva */
-    margin-bottom: 20px;
-}
-
-/* Estilos para el contenido bajo el segundo h1 */
 .texto-justificado {
-    text-align: justify;      /* Justificar el texto */
-    color: #ffcc00;           /* Cambia el color (amarillo) */
-    font-size: 1.3em;         /* Aumenta el tamaño del texto */
-    margin: 20px 0;           /* Agrega un margen para mejor separación */
+    text-align: justify;
+    font-size: 1.1em;
 }
 
-/* Modalidades en un cuadro */
+/* Estilo especial para "Ofrecemos" */
+.ofrecemos {
+    font-size: 1.5em;
+    color: #e74c3c;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Modalidades */
 .modalidades {
-    background-color: #e6f2ff; /* Fondo claro para las modalidades */
-    border: 2px solid #0056b3; /* Borde alrededor de las modalidades */
+    background-color: #ecf0f1;
     padding: 20px;
-    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
 }
 
-/* Estilos para los elementos de la lista */
-ul {
-    list-style-type: decimal; /* Cambia los puntos por números */
-    padding-left: 20px;
-    text-align: left; /* Alineación del texto a la izquierda */
-}
-
-ul li.uno {
-    color: #ff5733; /* Color rojo anaranjado */
+.modalidades h3 {
+    color: #27ae60;
     font-weight: bold;
 }
 
-ul li.dos {
-    color: #33ff57; /* Color verde */
-    font-weight: bold;
+.modalidades ol {
+    padding-left: 40px;
+    list-style: none;
 }
 
-ul li.tres {
-    color: #3357ff; /* Color azul */
-    font-weight: bold;
+.modalidades li {
+    padding: 8px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    border-left: 5px solid #2980b9;
+    background-color: #f4f6f7;
+    transition: transform 0.3s ease;
 }
 
-ul li.cuatro {
-    color: #ff33a1; /* Color rosa */
-    font-weight: bold;
+.modalidades li:hover {
+    transform: scale(1.05);
+    background-color: #d1e8e2;
 }
 
-ul li.cinco {
-    color: #ffdb33; /* Color amarillo */
-    font-weight: bold;
+.uno {
+    border-color: #3498db;
 }
-
-ul li.seis {
-    color: #9933ff; /* Color púrpura */
-    font-weight: bold;
+.dos {
+    border-color: #2ecc71;
 }
-
-/* Asegurando márgenes consistentes entre elementos */
-ul li {
-    margin-bottom: 5px;
+.tres {
+    border-color: #e67e22;
+}
+.cuatro {
+    border-color: #e74c3c;
+}
+.cinco {
+    border-color: #8e44ad;
+}
+.seis {
+    border-color: #f1c40f;
+}
+.siete {
+    border-color: #16a085;
 }
 
 /* Misión y Visión */
 .mission-vision {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .mission, .vision {
-    background-color: #e6f2ff;
-    padding: 20px;
-    border: 2px solid #0056b3;
     width: 45%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Pie de página */
+.mission h3, .vision h3 {
+    color: #2980b9;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
 footer {
-    background-color: #0056b3;
+    background-color: #34495e;
     color: white;
+    text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 40px;
 }
 
-/* Media queries para hacer la página responsiva */
-@media (max-width: 768px) {
-    .mission-vision {
-        flex-direction: column;
-    }
-    
-    .mission, .vision {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+footer p {
+    margin: 0;
 }
