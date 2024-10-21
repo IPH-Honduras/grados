@@ -1,111 +1,91 @@
-
- body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #ffffff; /* Aseguramos un fondo blanco para todo el body */
+    background-color: #f0f8ff; /* Azul muy claro para el fondo del body */
 }
-
 header {
     background-color: #2E86C1;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
-
 header h1 {
-    color: #1A5276;  /* Azul oscuro para el título del instituto */
+    color: #1A5276;
     font-size: 36px;
     margin-bottom: 10px;
 }
-
 header p {
     font-size: 18px;
     margin: 0;
 }
-
 nav {
     background-color: #1A5276;
     text-align: center;
     padding: 10px 0;
 }
-
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
 }
-
 nav a:hover {
     text-decoration: underline;
 }
-
 .content {
     padding: 20px;
     flex-grow: 1;
-    background-color: #ffffff; /* Aseguramos un fondo blanco para el contenido */
+    background-color: white;
 }
-
 .content h2 {
-    color: #2E86C1;  /* Azul más claro para los subtítulos */
+    color: #2E86C1;
 }
-
 .content p {
-    color: #333333; /* Color de texto oscuro para mejor legibilidad */
-    background-color: transparent; /* Fondo transparente para todos los párrafos */
+    color: #34495e; /* Azul oscuro para el texto */
+    background-color: transparent;
 }
-
 .modalidades {
     margin-top: 20px;
 }
-
 .modalidades h3 {
-    color: #1A5276; /* Azul oscuro para el título de las modalidades */
-    background-color: transparent; /* Fondo transparente para el título */
+    color: #1A5276;
+    background-color: transparent;
 }
-
 .modalidades table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
-
 .modalidades th, .modalidades td {
-    border: 1px ;
+    border: 1px solid #3498db; /* Cambiado a azul */
     padding: 10px;
     text-align: left;
 }
-
 .modalidades th {
-    background-color: #1A5276;
+    background-color: #3498db; /* Azul más claro */
     color: white;
 }
-
 .modalidades td {
-    background-color: #f0f0f0;
+    background-color: #ecf0f1; /* Gris muy claro */
 }
-
 .mission-vision {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-
 .mission, .vision {
     width: 48%;
-    background-color: #e6f2ff;  /* Fondo azul claro */
+    background-color: #e6f2ff;
     padding: 15px;
     border-radius: 5px;
 }
-
 .mission h3, .vision h3 {
-    color: #1A5276;  /* Azul oscuro para los títulos de misión y visión */
+    color: #1A5276;
 }
-
 footer {
     background-color: #2E86C1;
     color: white;
@@ -113,9 +93,9 @@ footer {
     padding: 10px 0;
     margin-top: auto;
 }
-
 img {
-    max-width: 150px;  /* Ajusta esto según el tamaño deseado */
+    max-width: 150px;
     height: auto;
     display: block;
     margin: 10px auto;
+}
