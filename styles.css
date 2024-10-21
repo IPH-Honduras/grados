@@ -32,7 +32,7 @@ header {
 /* Estilo del segundo H1 debajo del texto principal */
 h1 + p {
     font-size: 1.2em;
-    color: white; /* Cambiamos el color a blanco */
+    color:  Black;
     background-color: transparent; /* Quitamos el fondo de color amarillo */
     padding: 10px;
     text-align: center;
