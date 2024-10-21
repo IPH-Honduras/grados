@@ -55,14 +55,25 @@ nav a:hover {
     margin-top: 20px;
 }
 
-.modalidad {
-    background-color: #f0f0f0;  /* Cambiado de negro a un gris claro */
-    padding: 15px;
-    border-radius: 5px;
+.modalidades table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
 }
 
-.modalidad h3 {
-    color: #1A5276;  /* Azul oscuro para el título de las modalidades */
+.modalidades th, .modalidades td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.modalidades th {
+    background-color: #1A5276;
+    color: white;
+}
+
+.modalidades td {
+    background-color: #f0f0f0;
 }
 
 .mission-vision {
