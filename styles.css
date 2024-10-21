@@ -1,132 +1,126 @@
 
 
-
-
-
-
-/* styles.css */
-
-/* Estilos generales */
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Fondo gris claro */
-    color: #333; /* Color del texto */
 }
 
-/* Encabezado */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos de Encabezado */
+
 header {
-    background: #007BFF; /* Fondo azul */
-    color: white;
-    padding: 20px 0;
     text-align: center;
+    margin-top: 20px;
 }
 
-.logo {
-    text-align: center;
-    margin-bottom: 20px;
+h1 {
+    color: #333;
 }
 
-/* Barra de navegación */
+/* Estilos de Barra de Navegación */
+
 nav {
-    background: #333; /* Fondo negro */
-    color: white;
-    padding: 10px 0;
+    background-color: #333;
     text-align: center;
 }
 
 nav a {
-    color: #007BFF; /* Color de los enlaces */
+    color: #fff;
     text-decoration: none;
-    padding: 15px 20px;
-    display: inline-block;
-    transition: background 0.3s; /* Transición suave */
+    padding: 10px 20px;
 }
 
 nav a:hover {
-    background: #575757;
+    background-color: #555;
 }
 
-/* Contenido principal */
-.content {
-    padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Estilos de Contenido Principal */
+
+.content h2 {
+    color: #333;
 }
 
-/* Encabezados */
-h1, h2, h3 {
-    color: #007BFF; /* Color de los títulos */
+.content p {
+    color: #666;
 }
 
-/* Listas */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 5px 0;
-}
-
-/* Tabla de modalidades */
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    border: 1px solid black; /* Borde negro */
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #007BFF; /* Fondo azul */
-    color: white;
-}
-
-/* Contenido adicional */
-.additional-content {
-    background: #e9ecef;
-    padding: 20px;
-    border-radius: 5px;
+.modalidades {
     margin-top: 20px;
 }
 
-/* Misión y Visión */
+.modalidades h3 {
+    color: #333;
+}
+
+.modalidades ul {
+    list-style-type: none;
+}
+
+.modalidades li {
+    margin-top: 10px;
+}
+
+.modalidades .uno {
+    color: #009688;
+}
+
+.modalidades .dos {
+    color: #f44336;
+}
+
+.modalidades .tres {
+    color: #3f51b5;
+}
+
+.modalidades .cuatro {
+    color: #ff9800;
+}
+
+.modalidades .cinco {
+    font-weight: bold;
+}
+
+.modalidades .seis {
+    color: #e91e63;
+}
+
 .mission-vision {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
 .mission, .vision {
-    background: #e9ecef;
-    padding: 15px;
-    border-radius: 5px;
     flex: 1;
-    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Pie de página */
+.mission h3, .vision h3 {
+    color: #333;
+}
+
+.mission p, .vision p {
+    color: #666;
+}
+
+/* Estilos de Pie de Página */
+
 footer {
     text-align: center;
+    background-color: #333;
+    color: #fff;
     padding: 10px 0;
-    background: #333; /* Fondo negro */
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsividad */
-@media (max-width: 600px) {
-    .mission-vision {
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-    }
 }
