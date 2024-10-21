@@ -1,4 +1,5 @@
-body {
+
+   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -56,7 +57,7 @@ body {
     padding: 0;
 }
 header {
-    background-color: #2E86C1;  /* Cambiado de #333 a un tono de azul */
+    background-color: #2E86C1;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -64,15 +65,19 @@ header {
 header h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    color: #1A5276;  /* Cambiado a un tono de azul más oscuro */
 }
 header p {
     font-size: 18px;
     margin: 0;
 }
 nav {
-    background-color: #1A5276;  /* Cambiado de #ddd a un tono de azul más oscuro */
+    background-color: #1A5276;
     display: flex;
     justify-content: center;
 }
-    
 
+/* Regla específica para el h1 del Instituto Polivalente Honduras */
+h1:contains("Instituto Polivalente Honduras") {
+    color: #1A5276;  /* Un tono de azul más oscuro */
+}
