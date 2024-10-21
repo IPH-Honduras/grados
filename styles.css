@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -18,6 +16,21 @@ p {
     margin: 20px;
 }
 
+/* Centrar el logo */
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo {
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+}
+
 /* Estilos para el encabezado */
 header {
     background-color: #2980b9;
@@ -27,18 +40,22 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo del primer H1 */
+.main-title {
+    color: #e74c3c; /* Cambiado a rojo para resaltar */
+}
+
 /* Estilo del segundo H1 debajo del texto principal */
 h1 + p {
     font-size: 1.2em;
-    color:  Black;
-    background-color: transparent; /* Quitamos el fondo de color amarillo */
+    color: #2c3e50; /* Color azul oscuro */
+    background-color: transparent; 
     padding: 10px;
     text-align: center;
     font-weight: bold;
     margin: 20px 0;
-    text-transform: uppercase; /* Opcional, para hacer que resalte más */
+    text-transform: uppercase; 
 }
-
 
 header p {
     font-size: 1.2em;
@@ -57,11 +74,14 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     margin: 0 15px;
-    transition: color 0.3s;
+    padding: 10px 15px; /* Aumentado para mayor área clicable */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de transición */
 }
 
 nav a:hover {
-    color: #f39c12;
+    background-color: #f39c12; /* Fondo llamativo al pasar el mouse */
+    color: white; /* Color del texto en blanco */
 }
 
 /* Estilos para el contenido principal */
@@ -166,8 +186,4 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
 }
