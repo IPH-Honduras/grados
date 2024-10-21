@@ -74,11 +74,27 @@
             border-radius: 5px; 
             padding: 10px 15px; 
             cursor: pointer; 
-            transition: background-color 0.3s; 
+            transition: background-color 0.3s, transform 0.3s; 
         }
 
         button:hover {
             background-color: darkblue; 
+            transform: scale(1.1); /* Zoom al pasar el mouse */
+        }
+
+        .grade-button {
+            background-color: #6a0dad; 
+            color: white; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            border: none; 
+            transition: transform 0.3s, background-color 0.3s; 
+            cursor: pointer; 
+        }
+
+        .grade-button:hover {
+            background-color: #8a2be2; 
+            transform: scale(1.1); /* Zoom al pasar el mouse */
         }
 
         table {
@@ -181,9 +197,9 @@
         <section id="tercerCiclo">
             <h1>Tercer Ciclo</h1>
             <ul>
-                <li>Séptimo</li>
-                <li>Octavo</li>
-                <li>Noveno</li>
+                <li><button class="grade-button" onClick="scrollToSection('asignaturas')">Séptimo</button></li>
+                <li><button class="grade-button" onClick="scrollToSection('asignaturas')">Octavo</button></li>
+                <li><button class="grade-button" onClick="scrollToSection('asignaturas')">Noveno</button></li>
             </ul>
         </section>
         <hr>
@@ -278,6 +294,7 @@
         <p>&copy; 2024 Instituto Polivalente Honduras. Todos los derechos reservados.</p>
         <nav class="navbar">
             <button onClick="location.href='index.html'">Regresar a la página principal</button>
+            <button class="btn" onClick="alert('DIRECTORA: Iris Marlen Espinal    tel: (+504 3242-7125)')">¡Contáctanos!</button>
         </nav>
     </footer>
 </body>
