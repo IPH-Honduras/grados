@@ -75,7 +75,7 @@ nav a:hover {
 }
 
 .modalidades th, .modalidades td {
-    border: 1px solid black;
+    border: 1px ;
     padding: 10px;
     text-align: left;
 }
