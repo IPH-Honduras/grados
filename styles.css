@@ -3,36 +3,30 @@ body {
     margin: 0;
     padding: 0;
 }
-
 header {
     background-color: #2E86C1;
     color: white;
     padding: 10px 0;
     text-align: center;
 }
-
 nav {
     background-color: #1A5276;
     text-align: center;
     padding: 10px 0;
 }
-
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
 }
-
 nav a:hover {
     text-decoration: underline;
 }
-
 .content {
     padding: 20px;
     text-align: center;
 }
-
 footer {
     background-color: #2E86C1;
     color: white;
@@ -61,28 +55,24 @@ body {
     margin: 0;
     padding: 0;
 }
-
 header {
-    background-color: #333;
+    background-color: #2E86C1;  /* Cambiado de #333 a un tono de azul */
     color: #fff;
     padding: 20px;
     text-align: center;
 }
-
 header h1 {
     font-size: 36px;
     margin-bottom: 10px;
 }
-
 header p {
     font-size: 18px;
     margin: 0;
 }
-
 nav {
-    background-color: #ddd;
+    background-color: #1A5276;  /* Cambiado de #ddd a un tono de azul más oscuro */
     display: flex;
-    justify-content:
-
+    justify-content: center;
+}
     
 
