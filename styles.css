@@ -55,6 +55,19 @@ nav a:hover {
     margin: auto;
 }
 
+/* Texto más grande, blanco y en cursiva */
+p {
+    font-size: 1.2em;
+}
+
+p.ofrecemos {
+    font-size: 1.5em; /* Tamaño más grande */
+    color: white;     /* Color blanco */
+    font-style: italic; /* Texto en cursiva */
+    margin-bottom: 20px;
+}
+
+/* Modalidades en un cuadro */
 .modalidades {
     background-color: #e6f2ff; /* Fondo claro para las modalidades */
     border: 2px solid #0056b3; /* Borde alrededor de las modalidades */
@@ -62,16 +75,49 @@ nav a:hover {
     margin: 20px 0;
 }
 
+/* Estilos para los elementos de la lista */
 ul {
-    list-style-type: none; /* Eliminar puntos de la lista */
-    padding: 0;
+    list-style-type: decimal; /* Cambia los puntos por números */
+    padding-left: 20px;
     text-align: left; /* Alineación del texto a la izquierda */
 }
 
-ul li {
-    padding: 5px 0;
+ul li.uno {
+    color: #ff5733; /* Color rojo anaranjado */
+    font-weight: bold;
 }
 
+ul li.dos {
+    color: #33ff57; /* Color verde */
+    font-weight: bold;
+}
+
+ul li.tres {
+    color: #3357ff; /* Color azul */
+    font-weight: bold;
+}
+
+ul li.cuatro {
+    color: #ff33a1; /* Color rosa */
+    font-weight: bold;
+}
+
+ul li.cinco {
+    color: #ffdb33; /* Color amarillo */
+    font-weight: bold;
+}
+
+ul li.seis {
+    color: #9933ff; /* Color púrpura */
+    font-weight: bold;
+}
+
+/* Asegurando márgenes consistentes entre elementos */
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Misión y Visión */
 .mission-vision {
     display: flex;
     justify-content: space-around;
@@ -107,4 +153,3 @@ footer {
         margin-bottom: 20px;
     }
 }
-
