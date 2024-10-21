@@ -29,10 +29,18 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
+/* Estilo del segundo H1 debajo del texto principal */
+h1 + p {
+    font-size: 1.2em;
+    color: white; /* Cambiamos el color a blanco */
+    background-color: transparent; /* Quitamos el fondo de color amarillo */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase; /* Opcional, para hacer que resalte más */
 }
+
 
 header p {
     font-size: 1.2em;
