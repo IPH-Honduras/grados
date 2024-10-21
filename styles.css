@@ -67,6 +67,14 @@ p.ofrecemos {
     margin-bottom: 20px;
 }
 
+/* Estilos para el contenido bajo el segundo h1 */
+.texto-justificado {
+    text-align: justify;      /* Justificar el texto */
+    color: #ffcc00;           /* Cambia el color (amarillo) */
+    font-size: 1.3em;         /* Aumenta el tamaño del texto */
+    margin: 20px 0;           /* Agrega un margen para mejor separación */
+}
+
 /* Modalidades en un cuadro */
 .modalidades {
     background-color: #e6f2ff; /* Fondo claro para las modalidades */
